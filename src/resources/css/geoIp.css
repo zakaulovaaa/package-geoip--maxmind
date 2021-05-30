@@ -1,0 +1,255 @@
+.preloader_main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.preloader {
+    width: 290px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: inherit;
+    /*background-color: #1049a9;*/
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: inherit;
+    left: 85px;
+}
+
+.dot_1 {
+    -webkit-animation: dot-dot-dot-1 1.5s linear infinite;
+    animation: dot-dot-dot-1 1.5s linear infinite;
+    background-color: white;
+}
+
+.dot_2 {
+    -webkit-animation: dot-dot-dot-2 1.5s linear infinite;
+    animation: dot-dot-dot-2 1.5s linear infinite;
+    background-color: rgb(180, 180, 180);
+}
+
+.dot_3 {
+    -webkit-animation: dot-dot-dot-3 1.5s linear infinite;
+    animation: dot-dot-dot-3 1.5s linear infinite;
+    background-color: rgb(100, 100, 100);
+}
+
+@keyframes dot-dot-dot-1 {
+    0% {
+        transform: translate(-85px, 0px);
+    }
+    10% {
+        transform: translate(-85px, 0px);
+    }
+    20% {
+        transform: translate(-85px, -50px);
+    }
+    50% {
+        transform: translate(-85px, -50px);
+    }
+    60% {
+        transform: translate(-85px, 0px);
+    }
+    85% {
+        transform: translate(-85px, 0px);
+    }
+    85% {
+        transform: rotate(0deg)
+        translate(-85px)
+        rotate(0deg);
+        background-color: white;
+    }
+    100% {
+        transform: rotate(180deg)
+        translate(-85px)
+        rotate(-180deg);
+        background-color: rgb(100, 100, 100);
+    }
+}
+
+@keyframes dot-dot-dot-2 {
+
+    0% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(0px, 0px);
+    }
+    30% {
+        transform: translate(0px, -50px);
+    }
+    60% {
+        transform: translate(0px, -50px);
+    }
+    70% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes dot-dot-dot-3 {
+    0% {
+        transform: translate(85px, 0px);
+    }
+    30% {
+        transform: translate(85px, 0px);
+    }
+    40% {
+        transform: translate(85px, -50px);
+    }
+    70% {
+        transform: translate(85px, -50px);
+    }
+    80% {
+        transform: translate(85px, 0px);
+    }
+    85% {
+        transform: translate(-85px, 0px);
+    }
+    85% {
+        transform: rotate(0deg)
+        translate(85px)
+        rotate(0deg);
+        background-color: rgb(100, 100, 100);
+    }
+    100% {
+        transform: rotate(180deg)
+        translate(85px)
+        rotate(-180deg);
+        background-color: white;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.geoip_control {
+    display: flex;
+    flex-direction: column;
+}
+.geoip_title {
+    text-align: center;
+}
+
+.geoip_main_tabs {
+    margin: 20px;
+    border: 1px solid black;
+    /*padding: 10px;*/
+    height: 600px;
+    display: flex;
+}
+
+.geoip_tabs_title {
+    width: 250px;
+    background-color: rgb(200, 200, 200);
+    border-right: 1px solid black;
+
+}
+
+.geoip_tabs_title div {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.geoip_tab_data {
+    padding: 10px;
+}
+
+
+
+.geoip_form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.geoip_form input {
+    margin: 5px 0;
+}
+
+.geoip_tab_data--block {
+    display: flex;
+    flex-direction: column;
+}
+.geoip_btn {
+    width: 200px;
+    height: 74px;
+}
+
+.geoip_tab_data--first_block {
+    margin-bottom: 20px;
+}
+
+
+.active-tab {
+    background-color: rgb(170, 170, 170);
+    /*text-decoration: underline;*/
+}
+
+.geoip_table_info--left {
+    width: 40%;
+}
+
+#geoip_body_info {
+    margin: 40px 50px 0 50px;
+}
+
+#geoip_body_info table {
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+#geoip_popup_close {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+}
+#geoip_popup_close h3 {
+    margin: 0 50px;
+}
+.geoip_popup_title {
+    width: 100%;
+}
+.geoip_background_popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.geoip_popup {
+    width: 700px;
+    height: 650px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
