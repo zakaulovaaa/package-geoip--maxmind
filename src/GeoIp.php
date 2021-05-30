@@ -3,8 +3,8 @@
 namespace GeoIp;
 
 use GeoIp\Helper\HelperIp;
-use GeoIp\Interfaces\DataProvider;
-use GeoIp\Interfaces\DataSource;
+use GeoIp\ControllerInterfaces\DataProvider;
+use GeoIp\ControllerInterfaces\DataSource;
 
 class GeoIp {
 

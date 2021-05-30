@@ -10,7 +10,7 @@ use GeoIp\Models\City;
 use GeoIp\Migrations\CreateCitiesTable;
 use GeoIp\Migrations\CreateIpv4Table;
 
-class ControllerLaravel implements \GeoIp\Interfaces\DataProvider
+class ControllerLaravel implements \GeoIp\ControllerInterfaces\DataProvider
 {
 
     public function createTableCity(): void

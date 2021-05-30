@@ -1,13 +1,13 @@
 <?php
 
-namespace GeoIp\Interfaces;
+namespace GeoIp\ControllerInterfaces;
 
 use GeoIp\DTO\CityDTO;
 use GeoIp\DTO\IpDTO;
 
 /**
  * Interface DataSource
- * @package GeoIp\Interfaces
+ * @package GeoIp\ControllerInterfaces
  */
 interface DataSource {
     /**

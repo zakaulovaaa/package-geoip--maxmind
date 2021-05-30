@@ -4,7 +4,7 @@ namespace GeoIp\Controller;
 
 use \GeoIp\DTO\CityDTO;
 use \GeoIp\DTO\IpDTO;
-use \GeoIp\Interfaces\DataSource;
+use \GeoIp\ControllerInterfaces\DataSource;
 
 
 class ControllerMaxmind implements DataSource
