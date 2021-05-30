@@ -53,6 +53,24 @@ class IpDTO
         $this->networkTo = $networkTo;
     }
 
+    public function toArray(): array
+    {
+        return [
+            "network" => $this->network,
+            "geonameId" => $this->geonameId,
+            "registeredCountryGeonameId" => $this->registeredCountryGeonameId,
+            "representedCountryGeonameId" => $this->representedCountryGeonameId,
+            "isAnonymousProxy" => $this->isAnonymousProxy,
+            "isSatelliteProvider" => $this->isSatelliteProvider,
+            "postalCode" => $this->postalCode,
+            "latitude" => $this->latitude,
+            "longitude" => $this->longitude,
+            "accuracyRadius" => $this->accuracyRadius,
+            "networkFrom" => $this->networkFrom,
+            "networkTo" => $this->networkTo,
+        ];
+    }
+
     /**
      * @return string
      */

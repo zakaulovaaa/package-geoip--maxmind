@@ -41,6 +41,25 @@ class CityDTO
         $this->isInEuropeanUnion = $isInEuropeanUnion;
     }
 
+    public function toArray(): array
+    {
+        return [
+            "geonameId" => $this->geonameId,
+            "localeCode" => $this->localeCode,
+            "continentCode" => $this->continentCode,
+            "continentName" => $this->continentName,
+            "countryIsoCode" => $this->countryIsoCode,
+            "countryName" => $this->countryName,
+            "subdivision1IsoCode" => $this->subdivision1IsoCode,
+            "subdivision1Name" => $this->subdivision1Name,
+            "subdivision2IsoCode" => $this->subdivision2IsoCode,
+            "subdivision2Name" => $this->subdivision2Name,
+            "cityName" => $this->cityName,
+            "metroCode" => $this->metroCode,
+            "timeZone" => $this->timeZone,
+            "isInEuropeanUnion" => $this->isInEuropeanUnion,
+        ];
+    }
 
 
     /**

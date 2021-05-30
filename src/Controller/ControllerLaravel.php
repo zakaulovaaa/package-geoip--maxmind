@@ -142,8 +142,8 @@ class ControllerLaravel implements \GeoIp\ControllerInterfaces\DataProvider
             }
 
             $info[] = [
-                "ip" => get_object_vars($ipDTO),
-                "city" => get_object_vars($cityDTO)
+                "ip" => $ipDTO->toArray(),
+                "city" => $cityDTO->toArray()
             ];
         }
         return $info;
