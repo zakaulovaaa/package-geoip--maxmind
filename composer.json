@@ -1,0 +1,12 @@
+{
+    "name": "darya/package-geoip--maxmind",
+    "description": "extensible library for working with user location. implementation with maxmind.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "zakaulovaaa",
+            "email": "darya.zakaulova@yandex.ru"
+        }
+    ],
+    "require": {}
+}
