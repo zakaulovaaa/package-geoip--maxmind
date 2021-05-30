@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GeoIp;
+namespace GeoIp;
 
 use GeoIp\Helper\HelperIp;
 use GeoIp\Interfaces\DataProvider;
