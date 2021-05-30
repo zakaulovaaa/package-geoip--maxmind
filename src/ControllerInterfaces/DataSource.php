@@ -11,9 +11,9 @@ use GeoIp\DTO\IpDTO;
  */
 interface DataSource {
     /**
-     * @return bool  //true -- если в результате получения данных ошибок не возникло, иначе -- false
+     * @return array|bool
      */
-    public function downloadDataSource(): bool;
+    public function downloadDataSource();
 
     /**
      * @param int $numPage
