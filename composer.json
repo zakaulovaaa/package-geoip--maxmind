@@ -1,5 +1,5 @@
 {
-    "name": "darya/package-geoip--maxmind",
+    "name": "darya/package-geoip--maxmind-laravel",
     "description": "extensible library for working with user location. implementation with maxmind.",
     "type": "library",
     "authors": [
