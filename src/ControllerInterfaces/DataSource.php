@@ -20,7 +20,7 @@ interface DataSource {
      * @param int $step
      * @param string $type
      * @param array $filter
-     * @return array<CityDTO|IpDTO>
+     * @return array<CityDTO>|array<IpDTO>
      */
     public function getPieceOfData(int $numPage, int $step, string $type, array $filter): array;
 
