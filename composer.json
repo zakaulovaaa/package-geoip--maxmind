@@ -1,5 +1,5 @@
 {
-    "name": "zakaulovaaa/package-geoip--maxmind-laravel",
+    "name": "zakaulovaaa/package-geoip-maxmind-laravel",
     "description": "extensible library for working with user location. implementation with maxmind.",
     "type": "library",
     "authors": [
